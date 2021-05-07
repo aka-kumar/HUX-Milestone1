@@ -1,7 +1,5 @@
 package com.company;
 
-import java.time.LocalDate;
-
 public class Netflix {
     private String showId;
     private String type;
@@ -14,7 +12,7 @@ public class Netflix {
     private String releaseYear;
     private String rating;
     private String duration;
-    private String listed_in;
+    private String listedIn;
     private String description;
 
     public String getShowId() {
@@ -106,12 +104,12 @@ public class Netflix {
         this.duration = duration;
     }
 
-    public String getListed_in() {
-        return listed_in;
+    public String getListedIn() {
+        return listedIn;
     }
 
-    public void setListed_in(String listed_in) {
-        this.listed_in = listed_in;
+    public void setListedIn(String listedIn) {
+        this.listedIn = listedIn;
     }
 
     public String getDescription() {
@@ -125,17 +123,17 @@ public class Netflix {
     @Override
     public String toString() {
         return "Netflix{" +
-                "show_id='" + showId + '\'' +
+                "showId='" + showId + '\'' +
                 ", type='" + type + '\'' +
                 ", title='" + title + '\'' +
                 ", director='" + director + '\'' +
                 ", cast='" + cast + '\'' +
                 ", country='" + country + '\'' +
-                ", date_added=" + dateAdded +
-                ", release_year='" + releaseYear + '\'' +
+                ", dateAdded=" + dateAdded +
+                ", releaseYear='" + releaseYear + '\'' +
                 ", rating='" + rating + '\'' +
                 ", duration='" + duration + '\'' +
-                ", listed_in='" + listed_in + '\'' +
+                ", listedIn='" + listedIn + '\'' +
                 ", description='" + description + '\'' +
                 '}';
     }
