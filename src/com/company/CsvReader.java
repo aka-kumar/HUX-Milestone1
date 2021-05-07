@@ -2,7 +2,6 @@ package com.company;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,14 +19,15 @@ public class CsvReader {
             }
             String[] lineContents = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
             Netflix netflix = new Netflix();
-            netflix.setShow_id(lineContents[0]);
+            netflix.setShowId(lineContents[0]);
             netflix.setType(lineContents[1]);
             netflix.setTitle(lineContents[2]);
             netflix.setDirector(lineContents[3]);
             netflix.setCast(lineContents[4]);
             netflix.setCountry(lineContents[5]);
-            netflix.setDate_added(new SimpleDateFormat("dd-MMM-yy").parse(lineContents[6]));
-            netflix.setRelease_year(lineContents[7]);
+       //     netflix.setDate_added(LocalDate.parse(lineContents[6], DateTimeFormatter.ofPattern("dd-Mmm-yy", Locale.ENGLISH)));
+            netflix.setDateAdded(lineContents[6]);
+            netflix.setReleaseYear(lineContents[7]);
             netflix.setRating(lineContents[8]);
             netflix.setDuration(lineContents[9]);
             netflix.setListed_in(lineContents[10]);

@@ -1,27 +1,28 @@
 package com.company;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Netflix {
-    private String show_id;
+    private String showId;
     private String type;
     private String title;
     private String director;
     private String cast;
     private String country;
-    private Date date_added;
-    private String release_year;
+    private String dateAdded;
+ //   private LocalDate dateAdded;
+    private String releaseYear;
     private String rating;
     private String duration;
     private String listed_in;
     private String description;
 
-    public String getShow_id() {
-        return show_id;
+    public String getShowId() {
+        return showId;
     }
 
-    public void setShow_id(String show_id) {
-        this.show_id = show_id;
+    public void setShowId(String showId) {
+        this.showId = showId;
     }
 
     public String getType() {
@@ -64,20 +65,29 @@ public class Netflix {
         this.country = country;
     }
 
-    public Date getDate_added() {
-        return date_added;
+//    public LocalDate getDateAdded() {
+//        return dateAdded;
+//    }
+//
+//    public void setDateAdded(LocalDate dateAdded) {
+//        this.dateAdded = dateAdded;
+//    }
+
+
+    public String getDateAdded() {
+        return dateAdded;
     }
 
-    public void setDate_added(Date date_added) {
-        this.date_added = date_added;
+    public void setDateAdded(String dateAdded) {
+        this.dateAdded = dateAdded;
     }
 
-    public String getRelease_year() {
-        return release_year;
+    public String getReleaseYear() {
+        return releaseYear;
     }
 
-    public void setRelease_year(String release_year) {
-        this.release_year = release_year;
+    public void setReleaseYear(String releaseYear) {
+        this.releaseYear = releaseYear;
     }
 
     public String getRating() {
@@ -115,14 +125,14 @@ public class Netflix {
     @Override
     public String toString() {
         return "Netflix{" +
-                "show_id='" + show_id + '\'' +
+                "show_id='" + showId + '\'' +
                 ", type='" + type + '\'' +
                 ", title='" + title + '\'' +
                 ", director='" + director + '\'' +
                 ", cast='" + cast + '\'' +
                 ", country='" + country + '\'' +
-                ", date_added=" + date_added +
-                ", release_year='" + release_year + '\'' +
+                ", date_added=" + dateAdded +
+                ", release_year='" + releaseYear + '\'' +
                 ", rating='" + rating + '\'' +
                 ", duration='" + duration + '\'' +
                 ", listed_in='" + listed_in + '\'' +
